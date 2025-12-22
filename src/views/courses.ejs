@@ -1,0 +1,14 @@
+<h2>Courses</h2>
+
+<form method="POST" action="/courses/add">
+  <input name="title" placeholder="Course Title" required />
+  <input name="description" placeholder="Description" required />
+  <button>Add</button>
+</form>
+
+<ul>
+  <% courses.forEach(course => { %>
+    <li><%= course.title %> - <%= course.description %></li>
+  <% }) %>
+</ul>
+
